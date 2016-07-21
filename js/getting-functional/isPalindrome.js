@@ -3,8 +3,19 @@
 
 // Example Input
 
-// var str = 'racecar';
+var str = 'racecar';
 
 // Example Output
 
-// false
+// false   <---   This is incorrect - Output should be true.
+
+function isPalindrome(string) {
+  var gnirts = string.toLowerCase().split("").reverse().join("");
+  if (gnirts === string.toLowerCase()) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(isPalindrome(str));
